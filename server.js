@@ -21,16 +21,18 @@ app.use(expressLayouts) //tells app to usse expresss-ejs-layout-package stored i
 app.set("layout", "./layouts/layout") // not at views root
 //when express ejs looks for basic template view it will be found in th layouts folder
 
-// Index route
-app.get("/", function(req, res){
-  res.render("index", {title: "Lindsay Garner"})
-})
+
 
 
 /* ***********************
  * Routes
  *************************/
 app.use(require("./routes/static"))
+
+// Index route
+app.get("/", function(req, res){
+  res.render("index", {title: "Lindsay Garner"})
+})
 
 /* ***********************
  * Local Server Informationw
