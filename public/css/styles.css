@@ -34,15 +34,19 @@ header{
   font-family: 'Hind', sans-serif;
 }
 
-.headLinks{
+nav ul li{
   font-family: 'Hind', sans-serif;
-  display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  text-decoration: none;
   padding-left: 0px;
   color: white;
-  font-size: 16px;
-  
+  font-size: 16px; 
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+
 }
 
 nav{
